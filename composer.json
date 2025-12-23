@@ -1,10 +1,11 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "marekmiklusek/laravel-starter-kit",
+    "name": "marekmiklusek/livewire-starter-kit",
     "type": "project",
-    "description": "A type-safe Laravel starter kit for developers who value code quality.",
+    "description": "A type-safe Laravel Livewire starter kit",
     "keywords": [
         "laravel",
+        "livewire",
         "framework"
     ],
     "license": "MIT",
@@ -53,7 +54,7 @@
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
