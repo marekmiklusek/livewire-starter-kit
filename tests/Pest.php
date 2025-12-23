@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+use Tests\TestCase;
+use Illuminate\Support\Str;
+use Illuminate\Support\Sleep;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Process;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+pest()->extend(TestCase::class)
+    ->use(RefreshDatabase::class)
+    ->beforeEach(function (): void {
+        Str::createRandomStringsNormally();
+        Str::createUuidsNormally();
+        Http::preventStrayRequests();
+        Process::preventStrayProcesses();
+        Sleep::fake();
+
+        $this->freezeTime();
+    })
+    ->in('Browser', 'Feature', 'Unit');
+
+expect()->extend('toBeOne', fn () => $this->toBe(1));
+
+function something(): void
+{
+    // ..
+}
