@@ -78,22 +78,22 @@ class extends Component
     <!-- Page Header -->
     <div class="mb-8">
         <h1 class="text-2xl font-bold text-white">Profile Settings</h1>
-        <p class="text-gray-400 mt-1">Manage your account settings and preferences</p>
+        <p class="text-neutral-400 mt-1">Manage your account settings and preferences</p>
     </div>
 
     <!-- Profile Information -->
-    <div class="backdrop-blur-xl bg-white/5 rounded-2xl p-6 ring-1 ring-white/10 mb-6">
+    <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 mb-6">
         <h2 class="text-lg font-semibold text-white mb-1">Profile Information</h2>
-        <p class="text-sm text-gray-400 mb-6">Update your account's profile information and email address.</p>
+        <p class="text-sm text-neutral-400 mb-6">Update your account's profile information and email address.</p>
 
         <form wire:submit="updateProfile" class="space-y-4">
             <div>
-                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                <label for="name" class="block text-sm font-medium text-neutral-300 mb-2">Name</label>
                 <input
                     wire:model="name"
                     id="name"
                     type="text"
-                    class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-neutral-600 transition-all"
                 />
                 @error('name')
                     <p class="mt-2 text-sm text-red-400">{{ $message }}</p>
@@ -101,12 +101,12 @@ class extends Component
             </div>
 
             <div>
-                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                <label for="email" class="block text-sm font-medium text-neutral-300 mb-2">Email</label>
                 <input
                     wire:model="email"
                     id="email"
                     type="email"
-                    class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-neutral-600 transition-all"
                 />
                 @error('email')
                     <p class="mt-2 text-sm text-red-400">{{ $message }}</p>
@@ -116,7 +116,7 @@ class extends Component
             <div class="flex items-center gap-4">
                 <button
                     type="submit"
-                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 transition-all shadow-lg shadow-blue-500/25"
+                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-green-400 bg-green-500/10 hover:bg-green-500/20 transition-all"
                 >
                     <svg wire:loading wire:target="updateProfile" class="animate-spin size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -139,18 +139,18 @@ class extends Component
     </div>
 
     <!-- Update Password -->
-    <div class="backdrop-blur-xl bg-white/5 rounded-2xl p-6 ring-1 ring-white/10 mb-6">
+    <div class="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 mb-6">
         <h2 class="text-lg font-semibold text-white mb-1">Update Password</h2>
-        <p class="text-sm text-gray-400 mb-6">Ensure your account is using a long, random password to stay secure.</p>
+        <p class="text-sm text-neutral-400 mb-6">Ensure your account is using a long, random password to stay secure.</p>
 
         <form wire:submit="updatePassword" class="space-y-4">
             <div>
-                <label for="current_password" class="block text-sm font-medium text-gray-300 mb-2">Current Password</label>
+                <label for="current_password" class="block text-sm font-medium text-neutral-300 mb-2">Current Password</label>
                 <input
                     wire:model="current_password"
                     id="current_password"
                     type="password"
-                    class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-neutral-600 transition-all"
                 />
                 @error('current_password')
                     <p class="mt-2 text-sm text-red-400">{{ $message }}</p>
@@ -158,12 +158,12 @@ class extends Component
             </div>
 
             <div>
-                <label for="password" class="block text-sm font-medium text-gray-300 mb-2">New Password</label>
+                <label for="password" class="block text-sm font-medium text-neutral-300 mb-2">New Password</label>
                 <input
                     wire:model="password"
                     id="password"
                     type="password"
-                    class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-neutral-600 transition-all"
                 />
                 @error('password')
                     <p class="mt-2 text-sm text-red-400">{{ $message }}</p>
@@ -171,19 +171,19 @@ class extends Component
             </div>
 
             <div>
-                <label for="password_confirmation" class="block text-sm font-medium text-gray-300 mb-2">Confirm Password</label>
+                <label for="password_confirmation" class="block text-sm font-medium text-neutral-300 mb-2">Confirm Password</label>
                 <input
                     wire:model="password_confirmation"
                     id="password_confirmation"
                     type="password"
-                    class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-neutral-600 transition-all"
                 />
             </div>
 
             <div class="flex items-center gap-4">
                 <button
                     type="submit"
-                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 transition-all shadow-lg shadow-blue-500/25"
+                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-green-400 bg-green-500/10 hover:bg-green-500/20 transition-all"
                 >
                     <svg wire:loading wire:target="updatePassword" class="animate-spin size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -206,9 +206,9 @@ class extends Component
     </div>
 
     <!-- Delete Account -->
-    <div class="backdrop-blur-xl bg-white/5 rounded-2xl p-6 ring-1 ring-red-500/20">
+    <div class="bg-neutral-900 rounded-2xl p-6 border border-red-500/20">
         <h2 class="text-lg font-semibold text-white mb-1">Delete Account</h2>
-        <p class="text-sm text-gray-400 mb-6">Once your account is deleted, all of its resources and data will be permanently deleted.</p>
+        <p class="text-sm text-neutral-400 mb-6">Once your account is deleted, all of its resources and data will be permanently deleted.</p>
 
         <div x-data="{ confirmDelete: false }">
             <button

@@ -16,8 +16,3 @@ parameters:
     level: max
 
     tmpDir: /tmp/phpstan
-
-    ignoreErrors:
-        -
-            identifier: method.nonObject
-            path: routes/web.php
