@@ -1,3 +1,5 @@
+<img width="1888" height="1026" alt="image" src="https://github.com/user-attachments/assets/d955ad6b-040a-4337-baed-f93958a2bd0e" />
+
 # Livewire Starter Kit
 
 A type-safe Laravel Livewire starter kit with modern tooling and best practices.
