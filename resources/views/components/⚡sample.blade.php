@@ -77,7 +77,11 @@ class extends Component
                         </td>
                         <td class="px-6 py-4 text-sm text-neutral-400">Dec 23, 2025</td>
                         <td class="px-6 py-4 text-right">
-                            <button class="text-sm text-amber-400 hover:text-amber-300 transition-colors">Edit</button>
+                            <button class="p-2 rounded-lg text-cyan-400 hover:text-cyan-300 hover:bg-neutral-800 transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                </svg>
+                            </button>
                         </td>
                     </tr>
                     <tr class="hover:bg-neutral-800/50 transition-colors">
@@ -92,7 +96,11 @@ class extends Component
                         </td>
                         <td class="px-6 py-4 text-sm text-neutral-400">Dec 22, 2025</td>
                         <td class="px-6 py-4 text-right">
-                            <button class="text-sm text-amber-400 hover:text-amber-300 transition-colors">Edit</button>
+                            <button class="p-2 rounded-lg text-cyan-400 hover:text-cyan-300 hover:bg-neutral-800 transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                </svg>
+                            </button>
                         </td>
                     </tr>
                     <tr class="hover:bg-neutral-800/50 transition-colors">
@@ -107,7 +115,11 @@ class extends Component
                         </td>
                         <td class="px-6 py-4 text-sm text-neutral-400">Dec 21, 2025</td>
                         <td class="px-6 py-4 text-right">
-                            <button class="text-sm text-amber-400 hover:text-amber-300 transition-colors">Edit</button>
+                            <button class="p-2 rounded-lg text-cyan-400 hover:text-cyan-300 hover:bg-neutral-800 transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                </svg>
+                            </button>
                         </td>
                     </tr>
                 </tbody>
