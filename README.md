@@ -1,4 +1,4 @@
-<img width="1888" height="1026" alt="image" src="https://github.com/user-attachments/assets/d955ad6b-040a-4337-baed-f93958a2bd0e" />
+<img width="1908" height="1026" alt="image" src="https://github.com/user-attachments/assets/79004875-1263-4dd3-909f-439d815dbce3" />
 
 # Livewire Starter Kit
 
