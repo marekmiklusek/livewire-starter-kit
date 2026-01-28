@@ -20,7 +20,7 @@ new class extends Component
 <button
     wire:click="logout"
     type="button"
-    class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl ring-1 ring-white/10 hover:ring-red-500/50 transition-all"
+    class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-neutral-400 hover:text-white bg-neutral-800 hover:bg-neutral-700 rounded-xl border border-neutral-700 hover:border-red-500/50 transition-all"
 >
     <span wire:loading.remove wire:target="logout" class="flex items-center space-x-2">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

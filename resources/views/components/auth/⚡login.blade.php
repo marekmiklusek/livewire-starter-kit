@@ -71,37 +71,37 @@ new class extends Component
 };
 ?>
 
-<div class="min-h-screen flex items-center justify-center bg-gray-950 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+<div class="min-h-screen flex items-center justify-center bg-neutral-950 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
     <!-- Animated background -->
     <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style="animation-delay: 2s;"></div>
     </div>
 
     <div class="relative z-10 max-w-md w-full space-y-8">
         <div>
             <div class="flex justify-center mb-6">
-                <a href="{{ route('home') }}" wire:navigate class="w-14 h-14 bg-linear-br from-blue-500 via-teal-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/25 hover:scale-105 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="{{ route('home') }}" wire:navigate class="w-14 h-14 bg-neutral-800 rounded-2xl flex items-center justify-center border border-neutral-700 hover:border-neutral-600 hover:scale-105 transition-all">
+                    <svg class="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </a>
             </div>
-            <h2 class="text-center text-3xl font-extrabold bg-linear-to-r from-white via-blue-200 to-teal-200 bg-clip-text text-transparent">
+            <h2 class="text-center text-3xl font-extrabold text-white">
                 Welcome back
             </h2>
-            <p class="mt-2 text-center text-sm text-gray-400">
+            <p class="mt-2 text-center text-sm text-neutral-400">
                 Don't have an account?
-                <a href="{{ route('register') }}" wire:navigate class="font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="{{ route('register') }}" wire:navigate class="font-medium text-amber-400 hover:text-amber-300 transition-colors">
                     Sign up for free
                 </a>
             </p>
         </div>
 
         <form wire:submit="login" class="mt-8">
-            <div class="backdrop-blur-xl bg-white/5 p-8 rounded-2xl ring-1 ring-white/10 shadow-2xl space-y-6">
+            <div class="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 space-y-6">
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email address</label>
+                    <label for="email" class="block text-sm font-medium text-neutral-300 mb-2">Email address</label>
                     <input
                         wire:model="email"
                         id="email"
@@ -110,7 +110,7 @@ new class extends Component
                         autofocus
                         autocomplete="email"
                         placeholder="you@example.com"
-                        class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                     />
                     @error('email')
                         <p class="mt-2 text-sm text-red-400 flex items-center gap-1">
@@ -121,7 +121,7 @@ new class extends Component
                 </div>
 
                 <div>
-                    <label for="password" class="block text-sm font-medium text-gray-300 mb-2">Password</label>
+                    <label for="password" class="block text-sm font-medium text-neutral-300 mb-2">Password</label>
                     <input
                         wire:model="password"
                         id="password"
@@ -129,7 +129,7 @@ new class extends Component
                         required
                         autocomplete="current-password"
                         placeholder="••••••••"
-                        class="block w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        class="block w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
                     />
                     @error('password')
                         <p class="mt-2 text-sm text-red-400 flex items-center gap-1">
@@ -145,15 +145,15 @@ new class extends Component
                             wire:model="remember"
                             id="remember"
                             type="checkbox"
-                            class="w-4 h-4 bg-white/5 border-white/20 rounded text-blue-500 focus:ring-blue-500 focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer"
+                            class="w-4 h-4 bg-neutral-800 border-neutral-600 rounded text-amber-500 focus:ring-amber-500 focus:ring-offset-0 focus:ring-offset-neutral-900 cursor-pointer"
                         />
-                        <span class="ml-2 text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Remember me</span>
+                        <span class="ml-2 text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors">Remember me</span>
                     </label>
                 </div>
 
                 <button
                     type="submit"
-                    class="w-full flex justify-center items-center py-3 px-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500 transition-all duration-200 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                    class="w-full flex justify-center items-center py-3 px-4 rounded-xl text-sm font-semibold text-white bg-amber-600 hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-amber-500 transition-all duration-200 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                     wire:loading.attr="disabled"
                 >
                     <span wire:loading.remove wire:target="login" class="flex items-center">
