@@ -24,7 +24,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 final class User extends Authenticatable implements MustVerifyEmail
 {
     /** @use HasFactory<UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory;
+
+    use Notifiable;
 
     /**
      * @var list<string>
