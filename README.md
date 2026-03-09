@@ -21,12 +21,10 @@ A type-safe Laravel Livewire starter kit with modern tooling and best practices.
 - Node.js 18+
 - Composer
 
-## Quick Start
+## Installation
 
 > [!NOTE]
 > In `config/database.php`, `'engine' => 'InnoDB',` is used as the default for both `mysql` and `mariadb` connections.
-
-## Installation
 
 ```bash
 composer create-project marekmiklusek/livewire-starter-kit --prefer-dist app-name
