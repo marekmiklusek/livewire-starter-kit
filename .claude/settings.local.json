@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vendor/bin/pest --no-coverage)",
+      "Bash(/c/Users/marek/Herd/bin/php8.4.exe artisan:*)"
+    ]
+  }
+}
